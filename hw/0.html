@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HW 0 - Python course</title>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<h2>HW 0 - Classes</h2>
+		
+		Create a class <b>Student</b> whose constructor takes the following parameters:
+		<li> Name of student </li>
+		<li> Age of student </li>
+		<li> Home country </li>
+		<li> Student's Major </li>
+		<li> A dictionary which maps his courses to grades </li>
+		
+		<br>
+		The class should have the following methods:
+		<li><b>calculateGPA()</b> <br>
+			which returns his gpa out of 4 <br>
+			Use scheme:- A: 4.0, B: 3.0, C: 2.0, F: 1.0 <br>
+			Assume all courses have equal credits <br>
+		</li>
+		<li>
+			<b>addCourse(CourseName, Grade) </b> <br>
+			add course with grade to student object.
+		</li>
+		
+		<br>
+		Printing a student object on console should print in the following format:<br>
+		<i>&lt;Student Name&gt;</i>, <i>&lt;Age&gt;</i>, <i>&lt;Home Country&gt;</i> <br>
+		Major: <i>&lt;Major&gt;</i><br>
+		GPA: <i>&lt;GPA&gt;</i><br>
+		
+		<br>
+		Example:<br><br>
+		>>> student1 = Student('John Petrucci', 23, 'USA', 'Computer Science' {'Python Programming':'A'}) <br>
+		>>>	print student1 <br>
+		John Petrucci, 23, USA <br>
+		Major: Computer Science <br>
+		GPA: 4.0 <br>
+		>>> student1.addCourse('Data Structures', 'B') <br>
+		>>> print student1 <br>
+		John Petrucci, 23, USA <br>
+		Major: Computer Science <br>
+		GPA: 3.5 <br>
+		
+		<br>
+		<a href="../index.html">Back to course page</a>
+	</body>
+</html>
